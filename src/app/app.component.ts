@@ -12,13 +12,13 @@ export class AppComponent {
   incrementInputNum : number;
   incrementedNum : number;
 
-  increment($event) : void {
+  /*increment($event) : void {
 
     console.log('event received');
 
     this.incrementedNum = $event;
 
     console.log($event)
-  }
+  }*/
 
 }
