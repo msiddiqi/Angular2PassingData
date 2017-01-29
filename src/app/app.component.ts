@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  
+  title: string = "Incrementer App";
+
+  incrementInputNum : number;
+  incrementedNum : number;
+
+  increment($event) : void {
+
+    console.log('event received');
+
+    this.incrementedNum = $event;
+
+    console.log($event)
+  }
+
 }

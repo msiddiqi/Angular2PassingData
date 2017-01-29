@@ -1,3 +1,13 @@
 <h1>
   {{title}}
 </h1>
+<p></p><p></p>
+<div>
+  Input: <input type="number" [(ngModel)]="incrementInputNum" />
+  <p></p>
+  <app-incrementer [inputNum]="incrementInputNum" (incremented)="increment($event)"></app-incrementer>
+</div>
+<p></p><p></p>
+<div>
+  Incremented: <label>{{incrementedNum}}</label>
+</div>
